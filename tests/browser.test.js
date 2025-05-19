@@ -44,8 +44,8 @@ test("Push an item to the stack and check if it works", async () => {
     await alert.accept();
 
     const stack = await driver.findElement(By.id("top_of_stack")).getText();
-    expect(stack).toEqual("Kalle");//fail
-    //expect(stack).toEqual("Benjamin"); //pass
+    //expect(stack).toEqual("Kalle");//fail
+    expect(stack).toEqual("Benjamin"); //pass
 
 
     });
