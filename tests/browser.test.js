@@ -34,3 +34,21 @@ describe('Clicking "Pusha till stacken"', () => {
         await alert.accept();
     });
 });
+//Mitt test
+test("Push an item to the stack and check if it works", async () => {
+    const push = await driver.findElement(By.id('push'));
+    await push.click();
+
+    const alert = await driver.switchTo().alert();
+    await alert.sendKeys("Benjamin");
+    await alert.accept();
+
+    const stack = await driver.findElement(By.id("top_of_stack")).getText();
+    //expect(stack).toEqual("Kalle");//fail
+    expect(stack).toEqual("Benjamin"); //pass
+
+
+    });
+
+
+

@@ -17,3 +17,18 @@ test('peek on stack with two or more elements returns the top element', () => {
     expect(stack.peek()).toBeDefined();
     expect(stack.peek()).toBe(42);
 });
+
+
+test("Check the pop fucntion and if it removed the name", () => {
+    stack.push("Kalle");
+    
+    const name = stack.pop();
+    
+    expect(name).toBe("Kalle"); //Pass
+    expect(stack.peek()).toBeUndefined();//pass
+    
+    //expect(name).toBe("Benjamin"); //Fail
+   //expect(stack.peek()).toBe("Kalle") //Fail
+    
+    
+});
