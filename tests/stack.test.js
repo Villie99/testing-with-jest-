@@ -24,11 +24,11 @@ test("Check the pop fucntion and if it removed the name", () => {
     
     const name = stack.pop();
     
-    expect(name).toBe("Kalle"); //Pass
-    expect(stack.peek()).toBeUndefined();//pass
+    //expect(name).toBe("Kalle"); //Pass
+    //expect(stack.peek()).toBeUndefined();//pass
     
-    //expect(name).toBe("Benjamin"); //Fail
-   //expect(stack.peek()).toBe("Kalle") //Fail
+    expect(name).toBe("Benjamin"); //Fail
+   expect(stack.peek()).toBe("Kalle") //Fail
     
     
 });
